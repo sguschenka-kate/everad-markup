@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <a
+            class="logo logo-container"
+            href="/index.html"
+            aria-label="Go to the main page"
+          >
+            <img
+              src="./images/clown-fish.webp"
+              alt="The image of the logo - clown-fish"
+              class="logo__image"
+            />
+            <div class="logo__text" aria-label="The name of the company">
+              Суши-шмастер
+            </div>
+          </a>
+          <button class="button button-primary">Сделать заказ</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero container">
+          <h1 class="h1">Суши-шмастер - лучшее, что есть в твоем городе</h1>
+          <p class="hero__text">Порадуй себя и своих родных и близких</p>
+          <p>
+            Ниже представлены наши самые популярные позиции за последние полгода
+            работы на карантине
+          </p>
+        </section>
+        <section class="actual container">
+          <h2 class="actual__title">Актуальные позиции</h2>
+          <ul class="list actual__list">
+            <li class="list__item list__item--actual">
+              <img class="list__item-image" src="./images/roll1.webp" alt="Гринобль ролл" />
+              <div class="list__item-info">
+                <h3 class="list__item-name list__item-name--actual">Гринобль ролл</h3>
+                <pre class="list__item-description">
+                  Закажи сей вкусный ролл,
+                  Он украсит ваший стол,
+                  Он порадует ваш глаз,
+                  Получи скорей экстаз!
+                </pre>
+                <button class="button button-text button-text--ok">Заказать</button>
+              </div>
+            </li>
+            <li class="list__item list__item--actual">
+              <img class="list__item-image" src="./images/roll2.webp" alt="Оранжад ролл" />
+              <div class="list__item-info">
+                <h3 class="list__item-name list__item-name--actual">Оранжад ролл</h3>
+                <pre class="list__item-description">
+                  Закажи сей вкусный ролл,
+                  Он украсит ваший стол,
+                  Он порадует ваш глаз,
+                  Получи скорей экстаз!
+                </pre>
+                <button class="button button-text button-text--disabled">Недоступно к заказу</button>
+              </div>
+            </li>
+            <li class="list__item list__item--actual">
+              <img class="list__item-image" src="./images/roll3.webp" alt="Брауни ролл" />
+              <div class="list__item-info">
+                <h3 class="list__item-name list__item-name--actual">Брауни ролл</h3>
+                <pre class="list__item-description">
+                  Закажи сей вкусный ролл,
+                  Он украсит ваший стол,
+                  Он порадует ваш глаз,
+                  Получи скорей экстаз!
+                  </pre>
+                <button class="button button-text button-text--disabled">Недоступно к заказу</button>
+              </div>
+            </li>
+            <li class="list__item list__item--actual list__item--promo">
+              <a href="#delicious-sets" class="list__link">
+                <h3 class="list__item-name list__item-name--actual list__item-name--promo">Синергетический сет</h3>
+                <img class="list__item-image--promo" src="./images/set1.webp" alt="Синергетический сет">
+                <pre class="list__item-text--promo">
+                  А для абитуриентов
+                  у нас есть масса комплиментов!
+                </pre>
+                <img class="list__item-image--promo" src="./images/set2.webp" alt="Скарбовский сет">
+                <h3 class="list__item-name list__item-name--actual list__item-name--promo">Скарбовский сет</h3>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="propositions container propositions-container">
+          <h2 class="propositions__title">Самые выгодные предложения:</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="propositions__banner" src="./images/banner1.webp" alt="Креветки">
+              </div>
+              <div class="swiper-slide">
+                <img class="propositions__banner" src="./images/banner2.webp" alt="Дорадо у нас как феромоны">
+              </div>
+              <div class="swiper-slide">
+                <img class="propositions__banner" src="./images/banner3.webp" alt="Получи в подарок водку!">
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <span class="copyright">Copyright <span class="copyright-year"></span></span>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
