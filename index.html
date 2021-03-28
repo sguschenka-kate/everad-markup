@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/1ab0995688.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="body">
     <div class="wrapper">
@@ -115,8 +116,11 @@
                 <img class="propositions__banner" src="./images/banner3.webp" alt="Получи в подарок водку!">
               </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-navigation--custom">
+              <i class="fas fa-chevron-left swiper-button-prev--custom"></i>
+              <div class="swiper-pagination swiper-pagination-white"></div>
+              <i class="fas fa-chevron-right swiper-button-next--custom"></i>
+            </div>
           </div>
         </section>
       </main>
@@ -124,7 +128,7 @@
     <footer class="footer">
       <span class="copyright">Copyright <span class="copyright-year"></span></span>
     </footer>
-    <script src="./index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
